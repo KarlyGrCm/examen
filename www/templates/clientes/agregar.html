@@ -1,0 +1,27 @@
+<ion-view title="{{title}}" cache-view="false">
+  <ion-nav-bar>
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+    <ion-content padding="true">
+      <form ng-submit="addUser(user)">
+        <div class="list list-inset">
+          <label class="item item-input">
+            <input ng-model="user.name" type="text" placeholder="Nombre">
+          </label>
+          <label class="item item-input">
+            <input ng-model="user.address" type="text" placeholder="Domicilio">
+          </label>
+          <label class="item item-input">
+            <input ng-model="user.phone" type="tel" placeholder="Telefono">
+          </label>
+          <label class="item item-input">
+            <input ng-model="user.email" type="email" placeholder="Email">
+          </label>
+          <button class="button button-block button-positive" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </ion-content>
+</ion-view>

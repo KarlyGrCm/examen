@@ -1,0 +1,23 @@
+<ion-view title="Productos" cache-view="false">
+  <ion-nav-buttons side="right">
+      <a class="button" href="#/tab/productos/agregar">
+        <i class="icon ion-plus-round"></i>
+      </a>
+  </ion-nav-buttons>
+  <ion-content padding="true">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="searchName">
+      </label>
+    </div>
+    <div class="list">
+      <div class="cliente" ng-repeat="product in products | filter:searchName">
+        <a class="item item-avatar" ng-href="#/tab/productos/{{product.id}}">
+          <img ng-src="{{product.photo}}" >
+          <h2>{{product.name}}</h2>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

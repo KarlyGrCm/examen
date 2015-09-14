@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "authors": [
+    "Ricardo Rivas G. <richistron@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ]
+}

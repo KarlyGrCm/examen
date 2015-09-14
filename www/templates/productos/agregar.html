@@ -1,0 +1,33 @@
+<ion-view title="{{title}}" cache-view="false">
+  <ion-nav-bar>
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+    <ion-content padding="true">
+      <form ng-submit="addProduct(product)">
+        <div class="list list-inset">
+          <label class="item item-input">
+            <input type="text" ng-model="product.name" placeholder="Nombre">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="product.model" placeholder="Modelo">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="product.color" placeholder="Color">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="product.description" placeholder="Descripcion">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="product.price" placeholder="Precio compra">
+          </label>
+          <label class="item item-input">
+            <input type="text" ng-model="product.cost" placeholder="Precio venta">
+          </label>
+          <button class="button button-block button-positive">
+            Submit
+          </button>
+        </div>
+      </form>
+    </ion-content>
+</ion-view>
